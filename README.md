@@ -6,11 +6,12 @@ LFP is a fingerprinting technique aims to identify the vendor of routers on the 
 
 We use Scamper (version 20191102) to probe targets. to test it: 
 
-- Run `run.sh` to probe a list of targets 
+- Run `run.sh` to probe a list of targets
 `./run.sh target-ips.txt target-ips.json`   
 
 - Use `analysis.py` to analyze the responses and generate fingerprints
 `python3 analysis.py target-ips.json`
+	- output format: {IP|Possible Vendors|Signature}
 
 The current set of signatures can be found in the signatures directory.
 
