@@ -13,7 +13,7 @@ We use Scamper (version 20191102) to probe targets. to test it:
 `python3 analysis.py target-ips.json`
 	- output format: {IP|Possible Vendors|Signature}
 
-The current set of signatures can be found in the signatures directory.
+The current set of unique and non-unique signatures can be found in the signatures directory. the `signatures.csv` contains all signatures and used in the analysis script. 
 
 # BibTeX
 
