@@ -1,21 +1,22 @@
 # LFP: Lightweight FingerPrint
 
-LFP is a fingerprinting technique aims to identify the vendor of router. For more details please refer to our paper. 
+LFP is a fingerprinting technique aims to identify the vendor of routers on the Internet. For more details please refer to our [paper](https://dl.acm.org/doi/10.1145/3618257.3624813).
 
 # Quick Start 
 
-We use Scamper version 20191102 to probe targets. To test it: 
+We use Scamper (version 20191102) to probe targets. to test it: 
 
 - Run `run.sh` to probe a list of targets 
 `./run.sh target-ips.txt target-ips.json`   
 
-- Use `analysis.py` to analyze the responses and generate a fingerprint  
+- Use `analysis.py` to analyze the responses and generate fingerprints
 `python3 analysis.py target-ips.json`
 
-The current set of signatures can be found in signatures directory 
+The current set of signatures can be found in the signatures directory.
 
-# Bib
-If you use LFP in your research, please reference it with the following citations:
+# BibTeX
+
+If you use LFP in your research, please reference it with the following citation:
 
 ```bibtex
 @inproceedings{IMC2023-Fingerprinting,
